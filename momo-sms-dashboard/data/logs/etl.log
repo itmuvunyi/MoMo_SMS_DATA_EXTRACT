@@ -1,0 +1,7 @@
+[INFO] 2023-10-01 10:00:00 - ETL process started.
+[INFO] 2023-10-01 10:00:05 - Extracting data from XML file: data/raw/momo.xml
+[ERROR] 2023-10-01 10:00:10 - Failed to parse XML: Invalid format at line 42
+[INFO] 2023-10-01 10:00:15 - Transforming data: Cleaning and normalizing fields.
+[INFO] 2023-10-01 10:00:20 - Categorizing transactions based on defined rules.
+[INFO] 2023-10-01 10:00:25 - Loading data into SQLite database: data/db.sqlite3
+[INFO] 2023-10-01 10:00:30 - ETL process completed successfully.

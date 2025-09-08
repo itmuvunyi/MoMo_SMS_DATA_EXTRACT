@@ -1,0 +1,3 @@
+The file data/db.sqlite3 is the SQLite database file where processed data will be stored. Since this file is a binary database file, it cannot be represented as text content. Therefore, it will be created and managed by the SQLite library when you run your database-related scripts.
+
+This file is intentionally left blank.

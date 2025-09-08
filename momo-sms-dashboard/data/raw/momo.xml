@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactions>
+    <transaction>
+        <id>1</id>
+        <amount>10000</amount>
+        <date>2023-01-01</date>
+        <phone>0123456789</phone>
+        <type>payment</type>
+        <description>Payment for service</description>
+    </transaction>
+    <transaction>
+        <id>2</id>
+        <amount>5000</amount>
+        <date>2023-01-02</date>
+        <phone>0987654321</phone>
+        <type>refund</type>
+        <description>Refund for product</description>
+    </transaction>
+    <transaction>
+        <id>3</id>
+        <amount>15000</amount>
+        <date>2023-01-03</date>
+        <phone>0123456789</phone>
+        <type>payment</type>
+        <description>Payment for goods</description>
+    </transaction>
+    <transaction>
+        <id>4</id>
+        <amount>2000</amount>
+        <date>2023-01-04</date>
+        <phone>0987654321</phone>
+        <type>transfer</type>
+        <description>Transfer to account</description>
+    </transaction>
+</transactions>
