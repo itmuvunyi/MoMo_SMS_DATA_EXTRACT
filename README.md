@@ -37,8 +37,8 @@ The MoMo SMS Dashboard is an enterprise-level fullstack application designed to 
    ```
 
 ## Team Members
-- Member 1: [Name]
-- Member 2: [Name]
-- Member 3: [Name]
+- Member 1: [Innocent Tito Muvunyi]
+- Member 2: [Twariki Abdalazizi]
+- Member 3: [Flavienne BENIHIRWE]
 
 Feel free to replace the placeholder names with actual team member names.
