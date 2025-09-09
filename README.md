@@ -3,6 +3,11 @@
 ## Project Overview
 The MoMo SMS Dashboard is an enterprise-level fullstack application designed to process MoMo SMS data in XML format. The application will clean and categorize the data, store it in a relational database, and provide a frontend interface for analyzing and visualizing the data. This project aims to demonstrate skills in backend data processing, database management, and frontend development.
 
+## Scrumboard Link
+```bash
+https://momosmsdataextract.atlassian.net/jira/software/projects/MSDE/boards/1/backlog?atlOrigin=eyJpIjoiZjk2YjQwNDE1Nzk4NGUyYzgyZTA3MjFmMTdmOWE0OWYiLCJwIjoiaiJ9
+```
+
 ## Setup Instructions
 1. **Clone the Repository**
    ```bash
@@ -40,5 +45,3 @@ The MoMo SMS Dashboard is an enterprise-level fullstack application designed to 
 - Member 1: [Innocent Tito Muvunyi]
 - Member 2: [Twariki Abdalazizi]
 - Member 3: [Flavienne BENIHIRWE]
-
-Feel free to replace the placeholder names with actual team member names.
