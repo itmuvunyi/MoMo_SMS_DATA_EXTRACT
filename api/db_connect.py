@@ -10,15 +10,15 @@ def create_app():
  
     # PostgreSQL connection details
 
-    DB_USER = "postgres"
+    DB_USER = ""
 
-    DB_PASSWORD = "Incorrect"   # replace with actual password
+    DB_PASSWORD = ""   # replace with actual password
 
-    DB_HOST = "localhost"
+    DB_HOST = ""
 
-    DB_PORT = "5432"
+    DB_PORT = ""
 
-    DB_NAME = "postgres"
+    DB_NAME = ""
  
     app.config["SQLALCHEMY_DATABASE_URI"] = (
 
