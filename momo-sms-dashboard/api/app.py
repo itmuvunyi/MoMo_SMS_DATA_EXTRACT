@@ -1,24 +1,51 @@
-from fastapi import FastAPI
-from fastapi.responses import JSONResponse
-from .db import get_db_connection
-from .schemas import Transaction, Analytics
+# from .db_connect import create_app
 
-app = FastAPI()
+# from sqlalchemy import text
 
-@app.get("/transactions", response_model=list[Transaction])
-async def read_transactions():
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute("SELECT * FROM transactions")
-    rows = cursor.fetchall()
-    conn.close()
-    return JSONResponse(content=rows)
+# from .db import db   # local import
 
-@app.get("/analytics", response_model=Analytics)
-async def get_analytics():
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute("SELECT COUNT(*) as total_transactions, SUM(amount) as total_amount FROM transactions")
-    analytics_data = cursor.fetchone()
-    conn.close()
-    return JSONResponse(content={"total_transactions": analytics_data[0], "total_amount": analytics_data[1]})
+# from .controller import controller
+ 
+ 
+# if __name__ == "__main__":
+
+#     app = create_app()
+
+#     with app.app_context():
+
+#         try:
+
+#             # run a lightweight query to test the DB
+
+#             db.session.execute(text("SELECT 1"))
+
+
+#             print("✅ Database connection successful!")
+
+#         except Exception as e:
+
+#             print(" Database connection failed:", e)
+
+#     app.run(debug=True)
+
+ 
+from .db_connect import create_app
+from sqlalchemy import text
+from .db import db   # local import
+from .controller import controller_bp   # import the blueprint
+ 
+if __name__ == "__main__":
+    app = create_app()
+ 
+    # register your blueprint here
+    app.register_blueprint(controller_bp)
+ 
+    with app.app_context():
+        try:
+            # run a lightweight query to test the DB
+            db.session.execute(text("SELECT 1"))
+            print("✅ Database connection successful!")
+        except Exception as e:
+            print(" Database connection failed:", e)
+ 
+    app.run(debug=True)

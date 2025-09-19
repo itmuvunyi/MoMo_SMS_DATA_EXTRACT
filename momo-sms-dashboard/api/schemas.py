@@ -1,18 +1,24 @@
-from pydantic import BaseModel
-from typing import List, Optional
+from marshmallow import Schema, fields
 
-class Transaction(BaseModel):
-    id: int
-    amount: float
-    date: str
-    phone_number: str
-    transaction_type: str
-    description: Optional[str] = None
+class CustomerSchema(Schema):
+    id = fields.Int(required=True)
+    name = fields.Str(required=True)
+    email = fields.Str(required=True)
+    phone = fields.Str(required=True)
 
-class TransactionResponse(BaseModel):
-    transactions: List[Transaction]
+class TransactionCategorySchema(Schema):
+    id = fields.Int(required=True)
+    name = fields.Str(required=True)
 
-class AnalyticsResponse(BaseModel):
-    total_transactions: int
-    total_amount: float
-    transaction_types: dict[str, int]  # Mapping of transaction type to count
+class TransactionSchema(Schema):
+    id = fields.Int(required=True)
+    amount = fields.Float(required=True)
+    date = fields.Date(required=True)
+    category_id = fields.Int(required=True)
+    customer_id = fields.Int(required=True)
+
+class SystemLogSchema(Schema):
+    id = fields.Int(required=True)
+    action = fields.Str(required=True)
+    timestamp = fields.DateTime(required=True)
+    details = fields.Str(required=True)

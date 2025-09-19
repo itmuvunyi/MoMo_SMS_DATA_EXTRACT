@@ -1,1 +1,1 @@
-# This file is intentionally left blank.
+# from .db import init_db  # <-- Remove or comment out this line
