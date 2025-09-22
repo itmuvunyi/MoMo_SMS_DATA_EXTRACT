@@ -1,0 +1,9 @@
+The proposed database schema is designed to manage customers, their transactions, transaction categories, and system logs for auditing purposes. At the center of the design is the Transactions entity, which records all MoMo operations, including the sending party (partyA), receiving party (partyB), transaction amount, and timestamp. Each transaction is uniquely identified by transaction_id (PK).
+
+The Customers table maintains customer information such as full name and unique phone number. The 1:M relationship between Customers and Transactions reflects that a single customer can initiate or participate in multiple transactions over time.
+
+To capture audit information, the System_Logs table is introduced. It links back to both Customers and Transactions, ensuring that every action is tracked with a timestamp, transaction type, and related identifiers. This supports transparency and compliance requirements.
+
+Transactions can belong to one or more categories (e.g., “Payments,” “Transfers,” “Bills”), and categories may apply to many different transactions. This is a many-to-many relationship, resolved through the Transaction_Category_Map junction table. This structure prevents redundancy while allowing flexible categorization.
+
+Overall, this schema balances normalization with practical usability. It enforces integrity via primary and foreign keys, ensures unique identification of records, and provides the ability to extend features such as advanced analytics or fraud detection in the future.

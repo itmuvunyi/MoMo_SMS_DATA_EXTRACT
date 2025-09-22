@@ -1,3 +1,7 @@
 lxml
 python-dateutil
 fastapi
+SQLAlchemy
+flask_sqlalchemy
+PyMySQL
+python-dotenv
