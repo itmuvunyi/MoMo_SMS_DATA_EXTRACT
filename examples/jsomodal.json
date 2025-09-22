@@ -1,0 +1,63 @@
+{
+  "_comment": "Example data for MoMo SMS extraction. Each section represents a different entity.",
+  "customers": [
+    {
+      "customer_id": 1,
+      "fullName": "Abdalazizi T.",
+      "phoneNumber": "0784889737"
+    },
+    {
+      "customer_id": 2,
+      "fullName": "Flaviene Benihirwe",
+      "phoneNumber": "0781234567"
+    }
+  ],
+  "categories": [
+    {
+      "category_id": 1,
+      "categoryName": "Bank Deposit",
+      "description": "Money deposited into account"
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": 1,
+      "partyA": "0784889737",
+      "partyB": "0781234567",
+      "transaction_date": "2025-09-22T14:30:00Z",
+      "amount": 175.00,
+      "category_id": 1
+    }
+  ],
+  "logs": [
+    {
+      "log_id": 1,
+      "customer_id": 1,
+      "category": "Deposit",
+      "transaction_id": 1,
+      "transaction_date": "2025-09-22T14:30:05Z"
+    }
+  ],
+  "detailed_transactions": [
+    {
+      "transaction_id": 1,
+      "transaction_date": "2025-09-22T14:30:00Z",
+      "amount": 175.00,
+      "category": {
+        "category_id": 1,
+        "categoryName": "Bank Deposit",
+        "description": "Money deposited into account"
+      },
+      "partyA": {
+        "customer_id": 1,
+        "fullName": "Abdalazizi T.",
+        "phoneNumber": "0784889737"
+      },
+      "partyB": {
+        "customer_id": 2,
+        "fullName": "Flaviene Benihirwe",
+        "phoneNumber": "0781234567"
+      }
+    }
+  ]
+}
