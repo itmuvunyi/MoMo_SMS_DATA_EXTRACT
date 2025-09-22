@@ -1,18 +1,8 @@
-# from flask import Flask, jsonify, send_from_directory
-# from flask_cors import CORS
-
-# class controller():
-#     def __init__():
-#         @app.route('/api/transactions', methods=['GET'])
-    
-#         def index():
-#             return "Hello world"
-
 from flask import Blueprint, jsonify, request
 
-from .db import db
+from api.config.db import db
 
-from .customers import Customer
+from api.customers import Customer
  
 # create a Blueprint instead of a class
 
@@ -40,13 +30,13 @@ def create_customer():
 
         fullname = data["fullname"]
 
-        age = data["age"]
+        phoneNumber = data["phoneNumber"]
         # customer_id = data["customer_id"]
  
         new_customer = Customer(
             # customer_id = customer_id,
             fullname=fullname,
-            age=age,
+            phoneNumber=phoneNumber,
 
         )
         print("here is new customer",new_customer)
