@@ -45,7 +45,7 @@ See [`examples/jsomodal.json`](examples/jsomodal.json) for sample data reflectin
 
 ### ERD DOCS
 
-See [`docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf`](docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf) for more information about database.
+See [`docs/MoMo_SMS_DATA_EXTRACT_Database_implementation.pdf`](docs/MoMo_SMS_DATA_EXTRACT_Database_implementation.pdf) for more information about database.
 
 ---
 
