@@ -43,12 +43,10 @@ The database is structured to efficiently store and relate customer information,
 
 See [`examples/jsomodal.json`](examples/jsomodal.json) for sample data reflecting this schema.
 
----
 
 ### ERD DOC
 
-See [`examples/jsomodal.json`](docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf) for Full documentation.
-
+See [`docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf`](docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf) for Full documentation.
 ---
 
 ## Team Name
@@ -56,7 +54,7 @@ See [`examples/jsomodal.json`](docs/MoMo_SMS_DATA_EXTRACT Database implementatio
 
 ## Scrumboard Link
 ```bash
-https://momosmsdataextract.atlassian.net/jira/software/projects/MSDE/list?atlOrigin=eyJpIjoiNTQ3N2YzODllNzJiNDYwZDhmOTdlYjE3YTdhMGE3ZTkiLCJwIjoiaiJ9
+https://momosmsdataextract.atlassian.net/jira/software/projects/MSDE/boards/1/backlog?atlOrigin=eyJpIjoiZjk2YjQwNDE1Nzk4NGUyYzgyZTA3MjFmMTdmOWE0OWYiLCJwIjoiaiJ9
 ```
 
 ## Setup Instructions
