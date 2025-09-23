@@ -45,6 +45,12 @@ See [`examples/jsomodal.json`](examples/jsomodal.json) for sample data reflectin
 
 ---
 
+### ERD DOC
+
+See [`examples/jsomodal.json`](docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf) for Full documentation.
+
+---
+
 ## Team Name
 ### Third Dimension
 
