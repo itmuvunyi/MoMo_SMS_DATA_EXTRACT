@@ -43,10 +43,10 @@ The database is structured to efficiently store and relate customer information,
 
 See [`examples/jsomodal.json`](examples/jsomodal.json) for sample data reflecting this schema.
 
+### ERD DOCS
 
-### ERD DOC
+See [`docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf`](docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf) for more information about database.
 
-See [`docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf`](docs/MoMo_SMS_DATA_EXTRACT Database implementation.pdf) for Full documentation.
 ---
 
 ## Team Name
