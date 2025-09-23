@@ -50,7 +50,7 @@ See [`examples/jsomodal.json`](examples/jsomodal.json) for sample data reflectin
 
 ## Scrumboard Link
 ```bash
-https://momosmsdataextract.atlassian.net/jira/software/projects/MSDE/boards/1/backlog?atlOrigin=eyJpIjoiZjk2YjQwNDE1Nzk4NGUyYzgyZTA3MjFmMTdmOWE0OWYiLCJwIjoiaiJ9
+https://momosmsdataextract.atlassian.net/jira/software/projects/MSDE/list?atlOrigin=eyJpIjoiNTQ3N2YzODllNzJiNDYwZDhmOTdlYjE3YTdhMGE3ZTkiLCJwIjoiaiJ9
 ```
 
 ## Setup Instructions
